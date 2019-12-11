@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="a2df169b136e4752a111c1ee26ed1ad3" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_a2df169b136e4752a111c1ee26ed1ad3 = echarts.init(
+            document.getElementById('a2df169b136e4752a111c1ee26ed1ad3'), 'white', {renderer: 'canvas'});
+        var option_a2df169b136e4752a111c1ee26ed1ad3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "funnel",
+            "name": "Conversion_rate",
+            "data": [
+                {
+                    "name": "total_number_of_users",
+                    "value": 135483
+                },
+                {
+                    "name": "active_users",
+                    "value": 114001
+                },
+                {
+                    "name": "sign_up_users",
+                    "value": 73815
+                },
+                {
+                    "name": "reservations_users",
+                    "value": 10366
+                },
+                {
+                    "name": "pay_users",
+                    "value": 9018
+                },
+                {
+                    "name": "repay_users",
+                    "value": 4153
+                }
+            ],
+            "sort": "descending",
+            "gap": 0,
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "formatter": "{b}\uff1a{c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "repay_users",
+                "pay_users",
+                "sign_up_users",
+                "total_number_of_users",
+                "reservations_users",
+                "active_users"
+            ],
+            "selected": {
+                "total_number_of_users": true,
+                "active_users": true,
+                "sign_up_users": true,
+                "reservations_users": true,
+                "pay_users": true,
+                "repay_users": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {}
+    ]
+};
+        chart_a2df169b136e4752a111c1ee26ed1ad3.setOption(option_a2df169b136e4752a111c1ee26ed1ad3);
+    </script>
+</body>
+</html>
