@@ -34,12 +34,12 @@ WHERE id NOT IN (
 
 ##users portrait 
 #female ratio
-SELECT COUNT(id) AS '女性用户数量'
+SELECT COUNT(id) AS 'female users'
 FROM data.train_users
 WHERE gender = 'FEMALE';
 
 #male ratio
-SELECT COUNT(id) AS '男性用户数量'
+SELECT COUNT(id) AS 'male users'
 FROM data.train_users
 WHERE gender = 'MALE';
 
@@ -114,7 +114,7 @@ ORDER BY fat_ratio DESC;
 
 ##funnel analysis
 #total number of users
-SELECT COUNT(*)  AS ‘用户总数量’
+SELECT COUNT(*)  AS ‘total number of users’
 FROM (
 	SELECT user_id
 	FROM data.sessions
@@ -123,7 +123,7 @@ FROM (
 
 
 #active users
-SELECT COUNT(*)  AS ‘活跃用户总数量’
+SELECT COUNT(*)  AS ‘number of active users’
 FROM (
 	SELECT user_id
 	FROM data.sessions
@@ -132,7 +132,7 @@ FROM (
 ) active;
 
 #number of account_created users
-SELECT COUNT(*) AS ‘注册用户总数量’
+SELECT COUNT(*) AS ‘sign_up_users_number’
 FROM (
 	SELECT user_id
 	FROM data.sessions
@@ -141,7 +141,7 @@ FROM (
 	INNER JOIN data.train_users tu ON new_sessions.user_id = tu.id;
 
 #reservations
-SELECT COUNT(*) AS ‘下单用户总数量’
+SELECT COUNT(*) AS ‘reservations_number’
 FROM (
 	SELECT user_id
 	FROM data.sessions
@@ -150,7 +150,7 @@ FROM (
 ) booking;
 
 #payment_instruments
-SELECT COUNT(*) AS ‘实际支付用户总数量’
+SELECT COUNT(*) AS ‘pay_numbers’
 FROM (
 	SELECT user_id
 	FROM data.sessions
@@ -159,7 +159,7 @@ FROM (
 ) payed;
 
 #repurchase:payment_instruments > 1
-SELECT COUNT(*) AS ‘复购支付用户总数量’
+SELECT COUNT(*) AS ‘repay_numbers’
 FROM (
 	SELECT user_id
 	FROM data.sessions
