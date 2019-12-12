@@ -1,0 +1,1 @@
+SELECT  min(age),max(age) FROM data.train_users;
