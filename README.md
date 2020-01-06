@@ -4,6 +4,7 @@ I did this project on campus with someone who working at Airbnb to analyze Airbn
 The data we get includes users basic information, account information and purchase information. 
 In the product analysis, our goal is How to improve Airbnb to attract more users. 
 Therefore, in order to achieve our goal, we have to handle 3 questions:
+
 •	What’s the characteristic of Airbnb’s target users?
 •	Which Airbnb’s promotion channels are good and which channel need to be improved?
 •	How about the conversion rate of Airbnb’s funnel model?
