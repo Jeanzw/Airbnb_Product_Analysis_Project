@@ -6,7 +6,9 @@ In the product analysis, our goal is How to improve Airbnb to attract more users
 Therefore, in order to achieve our goal, we have to handle 3 questions:
 
 •	What’s the characteristic of Airbnb’s target users?
+
 •	Which Airbnb’s promotion channels are good and which channel need to be improved?
+
 •	How about the conversion rate of Airbnb’s funnel model?
 
 In order to answers the three question, we analyzed Airbnb product from 3 perspective, namely users portrait analysis, promotion channel analysis and funnel analysis and we used Hive to analyze and use python’s library pyecharts to realize visualization.
